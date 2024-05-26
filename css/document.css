@@ -397,7 +397,12 @@ body, .sidenav, .side {
 		margin-left: 2vw;
 		width: 94vw;
 	}
-	
+	p {
+		font-size: 4vw;
+	}
+	li {
+		font-size: 4vw;
+	}
 	h1 {
 		font-size: 9vw;
 	}
@@ -439,6 +444,12 @@ body, .sidenav, .side {
 	 .sidenav {
 		display: block;
 	}
+	p {
+		font-size: 3vw;
+	}
+	li {
+		font-size: 3vw;
+	}
 }
 
 @media (523px < width < 900px){
@@ -453,6 +464,12 @@ body, .sidenav, .side {
 	.dropdown-container a, .dropdown-container-open a{
 	  font-size: 14px;
 	}
+	p {
+		font-size: 15px;
+	}
+	li {
+		font-size: 15px;
+	}
 }
 
 @media (min-width: 801px) {
@@ -462,6 +479,24 @@ body, .sidenav, .side {
 
 	.dropdown-container a, .dropdown-container-open a{
 	  font-size: 16px;
+	}
+}
+
+@media (min-width: 901px) {
+	p {
+		font-size: 1.5vw;
+	}
+	li {
+		font-size: 1.5vw;
+	}
+}
+
+@media (min-width: 1200px) {
+	p {
+		font-size: 1.2vw;
+	}
+	li {
+		font-size: 1.5vw;
 	}
 }
 
