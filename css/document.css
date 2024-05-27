@@ -251,7 +251,7 @@ h6 {
 /*	bottom: 20px;*/
 }
 
-.sidenav1 {
+.side {
 /*	height: 100%;*/
 	width: 20vw;
 	position: fixed;
@@ -364,8 +364,10 @@ body, .sidenav, .side {
 .dropdown-container {
 	display: none;
 	background-color: #262626;
+/*
 	padding-left: 8px;
 	margin-right: 5px;
+*/
 }
 
 .dropdown-container-open {
@@ -481,7 +483,7 @@ body, .sidenav, .side {
 		padding: 5px 5px 5px 5px;
 	} 
 	
-	.sidenav1 {
+	.side {
 		padding: 5px 5px 18px 5px;
 	} 
 	.bodytext {
