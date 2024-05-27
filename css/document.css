@@ -167,9 +167,9 @@ h6 {
 }
 
 #logo {
-	margin-left: 1vw;
+/*	margin-left: 1vw;*/
 	width: 17.5vw;
-	margin-top: 1vw;
+/*	margin-top: 1vw;*/
 }
 
 /* The Overlay (background) */
@@ -272,23 +272,6 @@ h6 {
 .topnav span {
 	font-family: "Kode Mono", monospace;
 }
-/*
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-*/
 
 .topnav a:hover {
   background-color: #ddd;
@@ -311,52 +294,46 @@ h6 {
 	background-color: #111;
 	overflow: hidden;
 	padding: 0 0 10px 5px;
-	height: calc(20vw + 70px);
+	height: 23.7vh;
 /*	margin-bottom: 20px;*/
 /*	bottom: 20px;*/
 }
 
 .side {
-/*	height: 100%;*/
 	width: 20vw;
 	position: fixed;
 	z-index: 1;
-	top: calc(20vw + 70px);
+	top: 23.7vh;
 	left: 0;
 	background-color: #111;
 	overflow: scroll;
 	padding: 0 0 10px 5px;
-	height: calc(100vh - 238px);
+	height: 73vh;
 /*	margin-bottom: 20px;*/
 /*	bottom: 20px;*/
 }
 
-.side {
-/*    overflow: scroll;*/
-/*	margin-bottom: 20px;*/
-}
-
-body, .sidenav, .side {
+body, .side, .side {
 	scrollbar-width: thin;
 	scrollbar-color: #8f54a0 #000000;
   }
 
   /* Chrome, Edge, and Safari */
-  .main, .sidenav::-webkit-scrollbar {
+  .main, .side::-webkit-scrollbar {
 	width: thin;
   }
 
-  .main, .sidenav::-webkit-scrollbar-track {
+  .main, .side::-webkit-scrollbar-track {
 	background: #000000;
   }
 
-  .main, .sidenav::-webkit-scrollbar-thumb {
+  .main, .side::-webkit-scrollbar-thumb {
 	background-color: #8f54a0;
 	border-radius: 10px;
 	border: 3px solid #ffffff;
   }
 
-.sidenav a, .dropdown-btn {
+.side a, .dropdown-btn {
 	font-family: 'Caudex';
 	/*  padding: 6px 8px 6px 16px;*/
 	padding: 5px;
@@ -557,12 +534,15 @@ body, .sidenav, .side {
 	li {
 		font-size: 3vw;
 	}
+	.side_header {
+		font-size: 20px;
+	}
 }
 
 @media (523px < width < 900px){
 
 	.sidenav {
-		padding: 5px 5px 5px 5px;
+		padding: 5px 5px 0 5px;
 	} 
 	
 	.side {
@@ -593,18 +573,39 @@ body, .sidenav, .side {
 	}
 }
 
-@media (min-width: 901px) {
+@media (min-width: 900px) {
 	p {
 		font-size: 1.5vw;
 	}
 	li {
 		font-size: 1.5vw;
 	}
-}
-
-@media (min-width: 961px) {
 	#logo {
-		width: 17.5vw;
+		width: 160px;
+		margin-left: 10.14px;
+		margin-top: 10.14px;
+	}
+	.sidenav {
+		width: 187px;
+		height: 200px;
+	}
+	.side {
+		width: 187px;
+		top: 210px;
+		height: calc(100vh - 222px);
+		padding-bottom: 18px;
+	}
+	.dropdown-btn {
+	max-width: 182px;
+	}
+	.dropdown-container {
+	max-width: 182px;
+	}
+	.dropdown-container a:hover {
+	max-width: 182px;
+	}
+	.side_header {
+		font-size: 21px;
 	}
 }
 
