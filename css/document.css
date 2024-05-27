@@ -31,9 +31,13 @@ body {
 
 a {
 	text-decoration: none;
-	color: white;
+	color: #cccccc;
 }
 
+a:-webkit-any-link {
+	color: #cccccc;
+	text-decoration: none;
+}
 li {
 	font-size: 2vw;
 	font-family: spectral;	
@@ -75,7 +79,8 @@ h3 {
 	margin: 0;
 	margin-left: -5px;
 	font-family: caudex;
-	color: white;	
+	color: white;
+	text-decoration: none;
 }
 h4 {
 	font-size: 2.5vw;
