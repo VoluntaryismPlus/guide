@@ -244,9 +244,9 @@ h6 {
 	top: 0;
 	left: 0;
 	background-color: #111;
-	overflow: scroll;
+	overflow: hidden;
 	padding: 0 0 10px 5px;
-	height: 215px;
+	height: calc(20vw + 70px);
 /*	margin-bottom: 20px;*/
 /*	bottom: 20px;*/
 }
@@ -256,7 +256,7 @@ h6 {
 	width: 20vw;
 	position: fixed;
 	z-index: 1;
-	top: 215px;
+	top: calc(20vw + 70px);
 	left: 0;
 	background-color: #111;
 	overflow: scroll;
@@ -350,7 +350,6 @@ body, .sidenav, .side {
 .thispage a:hover {
 	width: 17.5vw;
 	margin-left: .3vw;
-	margin-top: .3vw;
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
@@ -362,7 +361,7 @@ body, .sidenav, .side {
 	background-color: #1f1f1f;
 	outline: 0.5px solid white;
 	margin-left: .3vw;
-	max-width: 18vw; 
+	max-width: 18vw;
 }
 
 /* Add an active class to the active dropdown button */
@@ -529,6 +528,12 @@ body, .sidenav, .side {
 	}
 	li {
 		font-size: 1.5vw;
+	}
+}
+
+@media (min-width: 961px) {
+	#logo {
+		width: 17.5vw;
 	}
 }
 
