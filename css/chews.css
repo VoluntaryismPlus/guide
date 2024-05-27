@@ -64,6 +64,23 @@ ul {
     font-size: 3.5vw;    
 }
 
+.image img{
+	width: 42vw;
+	z-index: -2;	
+    text-align: center;
+}
+
+.imagelarge {
+	width: 50vw;
+    display: flex;
+ 	align-items: center;
+}
+
+.imagelarge img{
+	z-index: 0;
+	width: 50vw;
+}
+
 .organic {
     text-align: right;
     margin: 0;
@@ -546,6 +563,9 @@ header{
     p {
         font-size: 3vw;    
     }
+	.imagelarge img {
+		width: 30vw;
+	} 
 }
 
 @media (max-width: 569px) {
@@ -641,6 +661,12 @@ header{
 		margin-left: -2vw;
 		left: 10px;
 		z-index: 0;
+	}
+}
+
+@media (min-width: 900px) {
+	.imagelarge img {
+		width: 55vw;
 	}
 }
 
