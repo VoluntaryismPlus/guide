@@ -301,7 +301,7 @@ body, .sidenav, .side {
 	display: block;
 	border: none;
 	background: none;
-	width: calc(20vw - 5px);
+	width: 20vw;
 	text-align: left;
 	cursor: pointer;
 	outline: none;
@@ -327,21 +327,30 @@ body, .sidenav, .side {
 .dropdown-container a, .dropdown-container-open a{
 	font-family: 'Spectral';
 	font-size: 1.5vw;
-	padding: 3px;
-	max-width: calc(20vw - 26px);
+	padding: 3px 0 3px 5x;
+/*	max-width: calc(20vw - 26px);*/
 	color: #b5b5b5;
+	max-width: 18.5vw;
 }
 
+/*
 .dropdown-container a:hover {
-	background-color: black;
+	background-color: white;
 	outline: 1px solid white;
 }
+*/
 
 .thispage {
 	background-color: black;
 	outline: 1px solid white;
 	color: white;
-	padding: 3px;
+	padding: 3px 0 3px 1px;
+	max-width: 19.7vw;
+}
+.thispage a:hover {
+	width: 17.5vw;
+	margin-left: .3vw;
+	margin-top: .3vw;
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
@@ -352,6 +361,8 @@ body, .sidenav, .side {
 	color: #f1f1f1;
 	background-color: #1f1f1f;
 	outline: 0.5px solid white;
+	margin-left: .3vw;
+	max-width: 18vw; 
 }
 
 /* Add an active class to the active dropdown button */
@@ -364,6 +375,7 @@ body, .sidenav, .side {
 .dropdown-container {
 	display: none;
 	background-color: #262626;
+	max-width: 20vw;
 /*
 	padding-left: 8px;
 	margin-right: 5px;
