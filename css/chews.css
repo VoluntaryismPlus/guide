@@ -83,13 +83,16 @@ ul {
 }
 
 .griffin {
-	width: 92vw;
+	width: 93vw;
 	margin-left: 20px;
-	display: none;
+    border: 15px solid;
+    border-color: #1D6A7E;
+    background-color: rgba(83,179,203,0.7);
+/*	display: none;*/
 }
 
 .griffin img{
-	width: 92vw;
+	width: 93vw;
 }
 
 .organic {
@@ -118,6 +121,7 @@ ul {
 
 .break {
 	height: calc(50vh - 20px);
+	display: none;
 }
 
 #hibiscus {
@@ -164,10 +168,10 @@ ul {
 
 .buttons {
     display: grid;
-    margin: 20px;
+    margin: 20px 0.5vw 20px 20px;
     overflow: hidden;
-    margin-left: 40px;
-    height: calc(100vh - 270px);
+    height: 100%;
+/*	width: 96vw;*/
 }
 
 .buttons a:link {
@@ -211,7 +215,113 @@ button1 a:hover {
     border: 10px solid;
     border-color: #B8D3DA;
 }
+.button3 {
+    grid-column: 1;
+	grid-row: 1;
+    background-color: rgba(99,159,171,0.7);
+    border: 10px solid;
+    border-color: #B8D3DA;
+	height: 70px;
+}
+.button4 {
+    grid-column: 1;
+	grid-row: 3;
+    background-color: rgba(99,159,171,0.7);
+    border: 10px solid;
+    border-color: #B8D3DA;
+	height: 70px;
+	margin-top: -10px;
+}
+.button5 {
+    grid-column: 2;
+	grid-row: 1;
+    background-color: rgba(184,211,218,0.7);
+    border: 10px solid;
+    border-color: #B8D3DA;
+	height: 70px;
+}
+.button6 {
+    grid-column: 2;
+	grid-row: 3;
+    background-color: rgba(184,211,218,0.7);
+    border: 10px solid;
+    border-color: #B8D3DA;
+	height: 70px;
+	margin-top: -10px;
+}
 
+.div3, .div4{
+    background-color: rgba(184,211,218,0.7);
+    border: 10px solid;
+    border-color: #B8D3DA;
+}
+
+.div3 {
+	grid-row: 2;
+	grid-column: 1;
+	margin-top: -10px;
+}
+
+.div4 {
+	grid-row: 4;
+	grid-column: 1;
+	margin-top: -10px;
+}
+
+.div5 {
+	grid-row: 2;
+	grid-column: 2;
+    background-color: rgba(99,159,171,0.7);
+    border: 10px solid;
+    border-color: #B8D3DA;
+	margin-top: -10px;
+}
+
+.div6 {
+	grid-row: 4;
+	grid-column: 2;
+    background-color: rgba(99,159,171,0.7);
+    border: 10px solid;
+    border-color: #B8D3DA;
+	margin-top: -10px;
+}
+
+.div3 img{
+	width: 47vw;
+	margin-top: 4px;
+/*	height: 25vh;*/
+/*
+	padding: 5px;
+	margin: 5px;
+*/
+}
+.div4 img{
+	width: 47vw;
+	margin-top: 4px;
+/*	height: 25vh;*/
+/*
+	padding: 5px;
+	margin: 5px;
+*/
+}
+.div5 img{
+	width: 47vw;
+	margin-top: 4px;
+/*	height: 25vh;*/
+/*
+	padding: 5px;
+	margin: 5px;
+*/
+}
+.div6 img{
+	width: 47vw;
+	margin-top: 4px;
+/*	height: 25vh;*/
+/*
+	padding: 5px;
+	margin: 5px;
+*/
+}
 .ingredientstext {
     background-color: rgba(184,211,218,0.9);
     border-right: 10px solid;
