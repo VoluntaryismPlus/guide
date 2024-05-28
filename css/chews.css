@@ -3,13 +3,14 @@ html, body {
     background-image: url("../img/igloo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+	background-position: 50% 25%;
     background-size: 100vw;
 }
 
 p {
     text-align: center;
     font-family: "Goudy Bookletter 1911";
+	font-size: 22px;
 }
 
 h1 {
@@ -81,6 +82,16 @@ ul {
 	width: 50vw;
 }
 
+.griffin {
+	width: 92vw;
+	margin-left: 20px;
+	display: none;
+}
+
+.griffin img{
+	width: 92vw;
+}
+
 .organic {
     text-align: right;
     margin: 0;
@@ -105,10 +116,14 @@ ul {
     z-index: -1;
 }
 
+.break {
+	height: calc(50vh - 20px);
+}
+
 #hibiscus {
     height: 14vw;
     position: absolute;
-    left: 45px;
+    left: 38px;
     top: 50px;
     z-index: 0;
 }
@@ -152,6 +167,7 @@ ul {
     margin: 20px;
     overflow: hidden;
     margin-left: 40px;
+    height: calc(100vh - 270px);
 }
 
 .buttons a:link {
@@ -159,7 +175,7 @@ ul {
 }
 
 .about {
-
+    height: calc(100vh - 340px);
 }
 
 .button1 {
@@ -180,7 +196,7 @@ button1 a:hover {
     border-bottom: 10px solid;
     border-color: #639FAB;
     padding: 15px;
-    height: calc(620px - 30vw);
+    height: calc(100vh - 340px);
     overflow: scroll;
 }
 
@@ -204,7 +220,7 @@ button1 a:hover {
     border-color: #B8D3DA;
     padding: 15px;
     grid-column: 2;
-    height: calc(620px - 30vw);
+/*    height: calc(620px - 30vw);*/
     overflow: scroll;
 }
 
@@ -446,6 +462,15 @@ header{
     }	
 }
 
+@media (1121px < width < 1262px) {
+	.break {
+		height: calc(50vh - 50px);
+	}
+	h2 {
+		font-size: 36px;
+	}
+}
+
 @media (min-width: 1262px) {
     .column1 {
 /*        height: calc(780px - 30vw);*/
@@ -456,10 +481,30 @@ header{
 	    height: 70vh;
     }	
 	.reggae-one-regular {
-		font-size: 6vw;
+		font-size: 76px;
 	}
 	h1 {
-		font-size: 4vw;
+		font-size: 46px;
+	}
+	.break {
+		height: calc(50vh - 130px);
+	}
+	h2 {
+		font-size: 40px;
+	}
+	#hibiscus {
+		height: 200px;
+		top: 20px;
+	}
+	#hibiscus1 {
+		height: 200px;
+		top: 20px;
+	}
+}
+
+@media (min-width: 1650px) {
+	.break {
+		height: calc(50vh - 190px);
 	}
 }
 
@@ -501,6 +546,9 @@ header{
     #blackhibiscus1 {
         top: 410px;
     }
+	.break {
+		height: calc(50vh - 50px);
+	}
 }
 
 @media (max-width: 1000px) {
@@ -662,6 +710,9 @@ header{
 		left: 10px;
 		z-index: 0;
 	}
+	.break {
+		height: 10vh;
+	}
 }
 
 @media (min-width: 900px) {
@@ -740,6 +791,9 @@ header{
 		left: 10px;
 		z-index: 0;
 	}
+	.break {
+		height: 10vh;
+	}
 }
 
 @media (max-width: 569px) and (710px < height < 966px) {
@@ -778,6 +832,9 @@ header{
 		left: 10px;
 		z-index: 0;
 	}
+	.break {
+		height: 10vh;
+	}
 }
 
 @media (max-width: 569px) and (min-height: 967px) {
@@ -814,9 +871,10 @@ header{
 		left: 10px;
 		z-index: 0;
 	}
+	.break {
+		height: 10vh;
+	}
 }
-
-
 
 @media (max-width: 366px) {
 	.flavors {
@@ -840,5 +898,8 @@ header{
 	.title {
 		margin-right: -8px;
 		margin-top: -8px;
+	}
+	.break {
+		height: 10vh;
 	}
 }
