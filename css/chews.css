@@ -83,7 +83,8 @@ ul {
 }
 
 .griffin {
-	width: 93vw;
+/*	width: 93vw;*/
+	width: 65vw;
 	margin-left: 20px;
     border: 15px solid;
     border-color: #1D6A7E;
@@ -92,7 +93,8 @@ ul {
 }
 
 .griffin img{
-	width: 93vw;
+/*	width: 93vw;*/
+	width: 65vw;
 }
 
 .organic {
@@ -199,7 +201,7 @@ button1 a:hover {
     border-left: 10px solid;
     border-bottom: 10px solid;
     border-color: #639FAB;
-    padding: 15px;
+    padding: 15px 5px 15px 15px;
     height: calc(100vh - 340px);
     overflow: scroll;
 }
