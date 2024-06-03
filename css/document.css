@@ -580,7 +580,16 @@ body, .side, .side {
 	li {
 		font-size: 15px;
 	}
+	.image {
+	width: 100%
 }
+
+	.image img {
+	width: 75vw;
+}
+}
+
+/*@media (min-width: )*/
 
 @media (min-width: 801px) {
 	.sidenav a, .dropdown-btn {
